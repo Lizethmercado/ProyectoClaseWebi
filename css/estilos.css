@@ -62,6 +62,53 @@ figure{
     margin-left: 20px;
 }
 
+#flexContenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gridContenedor{
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+    /*column-gap: 20px;
+    row-gap: 20px;*/
+    gap: 20px;
+    grid-template-rows: 100px 400px ;
+}
+
+div#flexContenedor > div {
+    width: 400px;
+    border: 1px solid red;
+    margin-right: 20px;
+
+}
+
+div#gridContenedor  > div{
+   
+    border: 1px solid blue;
+}
+#gridArea{
+    display: grid;
+    grid-template-areas: 'encabezado encabezado encabezado aside'
+    'encabezado intermedio intermedio aside'
+    'encabezado encabezado encabezado aside';
+}
+
+#divUno{
+    grid-area: encabezado;
+    background-color: aqua;
+}
+
+#divDos{
+    grid-area: intermedio;
+    background-color: blueviolet;
+}
+
+#divTres{
+    grid-area: aside;
+    background-color: darkgoldenrod;
+}
+
 
 
 
