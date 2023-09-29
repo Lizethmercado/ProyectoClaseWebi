@@ -1,0 +1,19 @@
+<script>
+
+    cantidadNumeroLeer = 2;
+
+    for (let i = 0; i < cantidadNumeroLeer; i++) {
+
+        var numero = parseInt(prompt("Digite un numero"));
+
+        if (esNumeroPar(numero))
+            console.log("es numero par");
+        else
+
+            console.log("es numero impar");
+    }
+
+    function esNumeroPar(numero) {
+        return numero % 2 == 0;
+    }
+</script>
